@@ -3,7 +3,10 @@
   --second-font: "Roboto Mono", monospace;
 }
 
-.App {
-  
+.title {
   font-size: 60px;
+}
+
+footer {
+  font-family: var(--second-font);
 }
