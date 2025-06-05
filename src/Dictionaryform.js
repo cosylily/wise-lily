@@ -22,9 +22,18 @@ export default function DictionaryForm() {
   }
   return (
     <div className="form">
-      <form onSubmit={wordSearch}>
-        <input type="search" onChange={handlingWord} />
-        <input type="submit" />
+      <form onSubmit={wordSearch} className="">
+        <input
+          type="search"
+          onChange={handlingWord}
+          placeholder="Look for the word..."
+          className="mt-3 mb-3 p-2 border border-end-0 rounded rounded-end-0 searchBox"
+        />
+        <input
+          type="submit"
+          value="🔍"
+          className="border border-start-0 rounded rounded-start-0 p-2 mt-3 mb-3 submitButton"
+        />
       </form>
     </div>
   );

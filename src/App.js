@@ -3,8 +3,12 @@ import DictionaryForm from "./Dictionaryform";
 
 function App() {
   return (
-    <div className="App">
-      <div className="title text-center">Dictionary</div>
+    <div className="App container">
+      <div className="title">
+        <h1 className="text-center m-3 p-2">Dictionary</h1>
+        <h3 className="m-3 p-2">Understand English words without any hassle</h3>
+      </div>
+
       <DictionaryForm />
       <footer className="m-3 text-center">
         This dictionary app is created by Hikari. Access the code through{" "}
