@@ -5,6 +5,7 @@
   --emerald: #183d2c;
   --light-brown: #e3c7b1;
 }
+/*for App.js*/
 .App {
   max-width: 800px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.4)), url(library.jpeg);
@@ -26,6 +27,12 @@
   text-align: center;
   font-size: 20px;
 }
+footer {
+  font-family: var(--second-font);
+  color: var(--light-green);
+}
+/*for Dictionaryform.js*/
+
 form {
   font-family: var(--second-font);
 }
@@ -39,7 +46,20 @@ form .submitButton {
 form .submitButton:hover {
   background-color: var(--emerald);
 }
-footer {
+
+/*for Dictionarycall.js*/
+.firstSec {
+  color: var(--emerald);
+}
+.firstSec .theword {
+  font-size: 30px;
+  font-family: var(--first-font);
+}
+.firstSec .phonetics {
+  font-size: 25px;
+}
+
+.secondSec {
+  font-size: 20px;
   font-family: var(--second-font);
-  color: var(--light-green);
 }
