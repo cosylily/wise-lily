@@ -1,0 +1,21 @@
+:root {
+  --first-font: "Montserrat", sans-serif;
+  --second-font: "Roboto Mono", monospace;
+  --light-green: #5a7769;
+  --emerald: #183d2c;
+  --light-brown: #e3c7b1;
+}
+.definitionSec {
+  font-size: 20px;
+}
+.titledefinition {
+  color: var(--emerald);
+  font-family: var(--first-font);
+}
+.definition {
+  color: var(--light-green);
+  font-family: var(--second-font);
+}
+.example {
+  color: var(--light-green);
+}

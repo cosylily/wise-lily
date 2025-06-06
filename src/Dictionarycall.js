@@ -18,11 +18,10 @@ export default function Wordcalling(props) {
               </div>
             );
           })}
-          <div className="synonym">Similar word: {props.need.synonym}</div>
         </div>
       </div>
     );
   } else {
-    return null;
+    return <div className="noResult m-2">⬆️Search a word now!⬆️</div>;
   }
 }

@@ -63,3 +63,10 @@ form .submitButton:hover {
   font-size: 20px;
   font-family: var(--second-font);
 }
+
+.noResult {
+  font-size: 30px;
+  font-family: var(--first-font);
+  text-align: center;
+  color: var(--emerald);
+}
