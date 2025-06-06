@@ -17,13 +17,7 @@ export default function DictionaryForm() {
 
   function handleResponse(response) {
     console.log(response);
-    setwordInfo({
-      rawdata: response.data,
-      word: response.data.word,
-      definition: response.data.meanings[0].definition,
-      phonetics: response.data.phonetic,
-      synonym: response.data.meanings[0].synonyms,
-    });
+    setwordInfo(response.data);
   }
   function handlingWord(event) {
     console.log(event.target.value);
