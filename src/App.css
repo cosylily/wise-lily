@@ -52,7 +52,7 @@ form .submitButton:hover {
   color: var(--emerald);
 }
 .firstSec .theword {
-  font-size: 30px;
+  font-size: 40px;
   font-family: var(--first-font);
 }
 .firstSec .phonetics {

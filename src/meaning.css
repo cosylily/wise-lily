@@ -5,17 +5,24 @@
   --emerald: #183d2c;
   --light-brown: #e3c7b1;
 }
-.definitionSec {
-  font-size: 20px;
-}
+
 .titledefinition {
   color: var(--emerald);
   font-family: var(--first-font);
+  font-size: 20px;
 }
 .definition {
   color: var(--light-green);
   font-family: var(--second-font);
+  font-size: 15px;
 }
 .example {
+  color: var(--light-green);
+  font-size: 15px;
+}
+
+.synonyms {
+  font-size: 15px;
+  font-family: var(--second-font);
   color: var(--light-green);
 }
