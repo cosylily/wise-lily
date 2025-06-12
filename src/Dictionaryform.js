@@ -7,12 +7,18 @@ export default function DictionaryForm() {
   let [word, setword] = useState({});
   let [wordInfo, setwordInfo] = useState({});
   let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
+  let [data, setdata] = useState({});
 
+  function getphonetics(response) {
+    console.log(response);
+    setdata(response.data[0]);
+  }
   function wordSearch(event) {
     event.preventDefault();
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
-    console.log(`Searching for ${word}`);
+    let apiUrltwo = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    axios.get(apiUrltwo).then(getphonetics);
   }
 
   function handleResponse(response) {
@@ -40,7 +46,7 @@ export default function DictionaryForm() {
           />
         </form>
       </div>
-      <Wordcalling need={wordInfo} />
+      <Wordcalling need={wordInfo} data={data} />
     </div>
   );
 }
