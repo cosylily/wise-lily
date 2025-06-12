@@ -6,7 +6,7 @@ import Phonetics from "./Phonetics";
 export default function Wordcalling(props) {
   if (props.need.word) {
     return (
-      <div className="border rounded p-1 m-2">
+      <div className="p-2 m-2">
         <div className="firstSec ms-3 mt-3">
           <div className="theword">{props.need.word}</div>
           <div className="phonetics">
