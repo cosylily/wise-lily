@@ -55,8 +55,8 @@ form .submitButton:hover {
   font-size: 40px;
   font-family: var(--first-font);
 }
-.firstSec .phonetics {
-  font-size: 25px;
+.phonetics {
+  font-size: 20px;
 }
 
 .secondSec {
