@@ -33,3 +33,7 @@
 .speaker:hover {
   font-size: 18px;
 }
+
+.image {
+  border-radius: 5px;
+}

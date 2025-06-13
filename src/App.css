@@ -70,3 +70,7 @@ form .submitButton:hover {
   text-align: center;
   color: var(--emerald);
 }
+
+.headerImage {
+  font-size: 18px;
+}

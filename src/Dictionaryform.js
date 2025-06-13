@@ -9,16 +9,23 @@ export default function DictionaryForm(props) {
   let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
   let [data, setdata] = useState({});
   let [loaded, setLoaded] = useState(false);
+  let [image, setImage] = useState({});
 
   function getphonetics(response) {
     console.log(response);
     setdata(response.data[0]);
+  }
+  function getimage(response) {
+    console.log(response);
+    setImage(response.data);
   }
   function wordSearch(event) {
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
     let apiUrltwo = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrltwo).then(getphonetics);
+    let apiUrlthree = `https://api.shecodes.io/images/v1/search?query=${word}&key=${apiKey}`;
+    axios.get(apiUrlthree).then(getimage);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -55,7 +62,7 @@ export default function DictionaryForm(props) {
             />
           </form>
         </div>
-        <Wordcalling need={wordInfo} data={data} />
+        <Wordcalling need={wordInfo} data={data} photos={image} />
       </div>
     );
   } else {
