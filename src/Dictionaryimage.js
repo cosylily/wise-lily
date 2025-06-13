@@ -8,7 +8,7 @@ export default function Image(props) {
           src={props.image.src.landscape}
           width="80%"
           className="image"
-          alt="image for the definition"
+          alt="picture matching the definition"
         />
       </div>
     );
