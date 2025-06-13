@@ -4,7 +4,12 @@ export default function Image(props) {
   if (props.image.src.landscape) {
     return (
       <div className="mt-2">
-        <img src={props.image.src.landscape} width="80%" className="image" />
+        <img
+          src={props.image.src.landscape}
+          width="80%"
+          className="image"
+          alt="image for the definition"
+        />
       </div>
     );
   } else {
