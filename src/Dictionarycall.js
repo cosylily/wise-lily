@@ -6,9 +6,9 @@ import Phonetics from "./Phonetics";
 export default function Wordcalling(props) {
   if (props.need.word) {
     return (
-      <div className="p-2 m-2">
-        <div className="firstSec ms-3 mt-3">
-          <div className="header">
+      <div className="p-2 m-2 ">
+        <div className="firstSec ms-3 mt-3 row">
+          <span className="header col-8">
             <div className="theword">{props.need.word}</div>
             <div className="phonetics">
               {props.data.phonetics.map(function (phonetics, index) {
@@ -19,17 +19,15 @@ export default function Wordcalling(props) {
                 );
               })}
             </div>
-          </div>
-          <div className="header-2 border border-white rounded p-3 mt-3 me-4 ms-2">
-            <div className="headerImage">Photos:</div>
-            <div className="row">
-              {props.photos.map(function (image, index) {
-                return (
-                  <img src={image.src.landscape} key={index} alt={image.alt} />
-                );
-              })}
-            </div>
-          </div>
+          </span>
+
+          <span className="image col-4 mt-4">
+            <img
+              src={props.pictures.src.landscape}
+              width="80%"
+              alt={props.pictures.alt}
+            />
+          </span>
         </div>
         <div className="secondSec p-3">
           {props.need.meanings.map(function (meaning, index) {
