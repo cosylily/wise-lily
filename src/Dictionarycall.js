@@ -24,7 +24,7 @@ export default function Wordcalling(props) {
           <div className="header-2 border border-white rounded p-3 mt-3 me-4 ms-2">
             <div className="headerImage">Photos:</div>
             <div className="row">
-              {props.photos.photos.map(function (image, index) {
+              {props.photosdata.photos.map(function (image, index) {
                 return (
                   <div className="col-4" key={index}>
                     <Image image={image} />

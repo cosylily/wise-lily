@@ -9,7 +9,7 @@ export default function DictionaryForm(props) {
   let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
   let [data, setdata] = useState({});
 
-  let [image, setImage] = useState({});
+  let [imagedata, setImage] = useState({});
 
   function getphonetics(response) {
     console.log(response);
@@ -58,7 +58,7 @@ export default function DictionaryForm(props) {
           />
         </form>
       </div>
-      <Wordcalling need={wordInfo} data={data} photos={image} />
+      <Wordcalling need={wordInfo} data={data} photosdata={imagedata} />
     </div>
   );
 }
