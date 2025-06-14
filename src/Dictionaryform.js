@@ -4,7 +4,7 @@ import Wordcalling from "./Dictionarycall";
 import "./App.css";
 
 export default function DictionaryForm(props) {
-  let [word, setword] = useState(props.defaultKeyword);
+  let [word, setword] = useState({});
   let [wordInfo, setwordInfo] = useState({});
   let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
   let [data, setdata] = useState({});

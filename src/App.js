@@ -9,7 +9,7 @@ function App() {
         <h3 className="m-3 p-2">Understand English words without any hassle</h3>
       </div>
       <div className="main-body p-2 rounded">
-        <DictionaryForm defaultKeyword="Welcome" />
+        <DictionaryForm />
         <footer className="m-3 text-center">
           This dictionary app is created by Hikari. Access the code through{" "}
           <a href="https://github.com/cosylily/wise-lily.git">GitHub</a> and{" "}
