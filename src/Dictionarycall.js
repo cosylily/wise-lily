@@ -6,7 +6,7 @@ import Phonetics from "./Phonetics";
 export default function Wordcalling(props) {
   if (props.need.word && props.image.photos) {
     return (
-      <div className="p-2 m-2 ">
+      <div className="p-2 m-3 ">
         <div className="firstSec row">
           <div className="header col-8">
             <div className="theword">{props.need.word}</div>
