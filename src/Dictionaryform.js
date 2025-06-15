@@ -9,11 +9,9 @@ export default function DictionaryForm(props) {
   let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
   let [data, setdata] = useState({});
   let [loaded, setload] = useState(false);
-
   let [imagedata, setImage] = useState({});
 
   function getphonetics(response) {
-    console.log(response);
     setdata(response.data[0]);
   }
 
@@ -31,14 +29,13 @@ export default function DictionaryForm(props) {
   }
   function getimage(response) {
     console.log(response.data.photos);
-    setImage(response.data.photos[0]);
+    setImage(response.data);
   }
   function handleResponse(response) {
     console.log(response);
     setwordInfo(response.data);
   }
   function handlingWord(event) {
-    console.log(event.target.value);
     setword(event.target.value);
   }
   if (loaded) {
@@ -59,7 +56,7 @@ export default function DictionaryForm(props) {
             />
           </form>
         </div>
-        <Wordcalling need={wordInfo} data={data} pictures={imagedata} />
+        <Wordcalling need={wordInfo} data={data} image={imagedata} />
       </div>
     );
   } else {

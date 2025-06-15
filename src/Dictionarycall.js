@@ -7,8 +7,8 @@ export default function Wordcalling(props) {
   if (props.need.word) {
     return (
       <div className="p-2 m-2 ">
-        <div className="firstSec ms-3 mt-3 row">
-          <span className="header col-8">
+        <div className="firstSec row">
+          <div className="header col-8">
             <div className="theword">{props.need.word}</div>
             <div className="phonetics">
               {props.data.phonetics.map(function (phonetics, index) {
@@ -19,15 +19,15 @@ export default function Wordcalling(props) {
                 );
               })}
             </div>
-          </span>
+          </div>
 
-          <span className="image col-4 mt-4">
+          <div className="image col-4">
             <img
-              src={props.pictures.src.landscape}
-              width="80%"
-              alt={props.pictures.alt}
+              src={props.image.photos[0].src.landscape}
+              alt={props.image.photos[0].alt}
+              width="200px"
             />
-          </span>
+          </div>
         </div>
         <div className="secondSec p-3">
           {props.need.meanings.map(function (meaning, index) {
