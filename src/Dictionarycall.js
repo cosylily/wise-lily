@@ -4,7 +4,7 @@ import Meaning from "./Dictionarymeaning";
 import Phonetics from "./Phonetics";
 
 export default function Wordcalling(props) {
-  if (props.need.word) {
+  if (props.need.word && props.image.photos) {
     return (
       <div className="p-2 m-2 ">
         <div className="firstSec row">
